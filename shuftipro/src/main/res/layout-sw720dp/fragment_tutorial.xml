@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTopBarTut1">
+
+    <RelativeLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_color"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_below="@+id/headingTextView"
+            android:id="@+id/detailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_capture"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_tut_image"
+            android:layout_width="430dp"
+            android:layout_height="430dp"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/face_image"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/instructionHeadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_tut_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/instructionHeadingTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/camera_click_views_colors" />
+
+                <TextView
+                    android:id="@+id/instructionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/camera_click_views_colors" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Make sure the light is not too low or too bright"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/camera_click_views_colors" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Video duration 10 seconds"
+                    android:textColor="#000"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/camera_click_views_colors"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTopBarTut1"
+        android:textSize="28sp"/>
+
+
+</RelativeLayout>

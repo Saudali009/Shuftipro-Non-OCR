@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ShuftiPro</string>
+    <string name="face_verification">Face Verification</string>
+    <string name="capture_face_video">Capture your Face Video</string>
+    <string name="remove_accessories">Remove all accessories (e.g. glasses)</string>
+    <string name="document_verification">Documentation Verification</string>
+    <string name="supported_types">Supported Types</string>
+    <string name="capture_document">Capture Document Video</string>
+    <string name="hold_doc_steady">Ensure the text is visible (hold document steady)</string>
+    <string name="address_verification">Address Verification</string>
+    <string name="capture_address_document">Capture Address Document Video</string>
+    <string name="ensure_address_visible">Ensure the address is visible</string>
+    <string name="consent_verification">Consent Verification</string>
+    <string name="capture_consent_document">Capture Consent Document Video</string>
+    <string name="empty_client_id">ClientId cannot be empty. Please, provide your client id.</string>
+    <string name="empty_secret_key">Secret key cannot be empty. Please, provide your secret key.</string>
+    <string name="empty_reference">Reference parameter cannot be empty. Please, provide a unique reference.</string>
+    <string name="empty_country">Country parameter cannot be empty. Please, provide a country name.</string>
+    <string name="empty_email">CEmail parameter cannot be empty. Please, provide an email address.</string>
+    <string name="empty_callback_url">Callback url parameter cannot be empty. Please, provide callback url.</string>
+    <string name="document_type_no_set">Document supported types are not set.</string>
+    <string name="address_type_no_set">Address supported types are not set.</string>
+
+</resources>
